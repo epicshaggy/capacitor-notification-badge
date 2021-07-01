@@ -1,13 +1,13 @@
 package com.epicshaggy.notificationbadge;
 
-import com.getcapacitor.NativePlugin;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
+import com.getcapacitor.annotation.CapacitorPlugin;
 
 import me.leolin.shortcutbadger.ShortcutBadger;
 
-@NativePlugin
+@CapacitorPlugin()
 public class NotificationBadge extends Plugin {
 
     @PluginMethod()
@@ -15,9 +15,9 @@ public class NotificationBadge extends Plugin {
         int count = call.getInt("count", 0);
         if (ShortcutBadger.isBadgeCounterSupported(getContext())) {
             ShortcutBadger.applyCount(getContext(), count);
-            call.success();
+            call.resolve();
         } else {
-            call.error("Device not supported");
+            call.reject("Device not supported");
         }
 
     }

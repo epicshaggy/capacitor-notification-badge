@@ -20,10 +20,3 @@ export class NotificationBadgeWeb
     });
   }
 }
-
-const NotificationBadge = new NotificationBadgeWeb();
-
-export { NotificationBadge };
-
-import { registerWebPlugin } from '@capacitor/core';
-registerWebPlugin(NotificationBadge);
