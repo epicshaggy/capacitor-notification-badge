@@ -6,6 +6,12 @@ Set the app icon's notification badge count.
 
 ## Installation
 
+### Capacitor 2
+
+- `npm i capacitor-notification-badge@0.0.1`
+
+### Capacitor 3
+
 - `npm i capacitor-notification-badge`
 
 ## Usage
