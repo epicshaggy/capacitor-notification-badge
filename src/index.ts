@@ -1,5 +1,5 @@
 import { registerPlugin } from '@capacitor/core';
-import { NotificationBadgePlugin } from './definitions';
+import type { NotificationBadgePlugin } from './definitions';
 
 const NotificationBadge = registerPlugin<NotificationBadgePlugin>(
   'NotificationBadge',

@@ -15,8 +15,6 @@ export class NotificationBadgeWeb
   }
 
   async setBadgeCount(_options: NotificationBadgeOptions): Promise<any> {
-    return new Promise((_resolve, reject) => {
-      reject('No web implementation');
-    });
+    this.unimplemented('No web implementation');
   }
 }
