@@ -16,9 +16,11 @@
   },
   "author": "Jose Martinez",
   "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "^3.0.2"
+  },
   "devDependencies": {
     "@capacitor/android": "^3.0.2",
-    "@capacitor/core": "^3.0.2",
     "@capacitor/ios": "^3.0.2",
     "@ionic/prettier-config": "^1.0.0",
     "@ionic/swiftlint-config": "^1.0.0",
@@ -29,9 +31,6 @@
     "rollup": "^2.21.0",
     "swiftlint": "^1.0.1",
     "typescript": "~3.8.3"
-  },
-  "peerDependencies": {
-    "@capacitor/core": "^2.4.7"
   },
   "files": [
     "dist/",
